@@ -1,18 +1,28 @@
-import { agregarTarea } from "./agregarTarea.js";
-import { eliminar } from "./eliminarTarea.js";
+import { addTask } from "./addTask.js";
+import { eliminar } from "./deleteTask.js";
 
 let input = document.createElement("input");
 input.setAttribute("id", "input");
 input.setAttribute("type", "text");
-input.setAttribute("placeholder", "Agrega una nueva tarea");
+input.setAttribute("placeholder", "New task...");
 
 document.getElementById("app").appendChild(input);
 
 let button = document.createElement("button");
-button.setAttribute("id", "agregarTarea");
+button.setAttribute("id", "addTask");
 button.type = "button";
-button.innerText = "Agregar Tarea";
+button.innerText = "Add";
 
 document.getElementById("app").appendChild(button);
 
-document.querySelector("#agregarTarea").addEventListener("click", agregarTarea);
+document.querySelector("#addTask").addEventListener("click", addTask);
+
+let div = document.createElement("div");
+div.setAttribute("id", "toDoList");
+
+document.getElementById("app").appendChild(div);
+
+let ul = document.createElement("ul");
+ul.setAttribute("id", "list");
+
+document.getElementById("app").appendChild(ul);
