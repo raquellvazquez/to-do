@@ -1,5 +1,5 @@
-import {test} from './agregarTarea.js';
-import {eliminar} from './eliminarTarea.js';
+import { agregarTarea } from "./agregarTarea.js";
+import { eliminar } from "./eliminarTarea.js";
 
 let input = document.createElement("input");
 input.setAttribute("id", "input");
