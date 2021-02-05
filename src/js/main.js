@@ -14,3 +14,5 @@ button.type = "button";
 button.innerText = "Agregar Tarea";
 
 document.getElementById("app").appendChild(button);
+
+document.querySelector("#agregarTarea").addEventListener("click", agregarTarea);
