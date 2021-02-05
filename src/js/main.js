@@ -1,6 +1,15 @@
 import { addTask } from "./addTask.js";
 import { eliminar } from "./deleteTask.js";
+import { header, dateHeader } from "./header.js";
 
+/**
+ * Section Header
+ */
+header;
+dateHeader;
+/**
+ * Add new task section
+ */
 let input = document.createElement("input");
 input.setAttribute("id", "input");
 input.setAttribute("type", "text");
@@ -24,5 +33,5 @@ document.getElementById("app").appendChild(div);
 
 let ul = document.createElement("ul");
 ul.setAttribute("id", "list");
-
 document.getElementById("app").appendChild(ul);
+
