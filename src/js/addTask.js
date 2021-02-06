@@ -1,3 +1,5 @@
+import { deleteTask } from "./deleteTask.js";
+
 export function addTask() {
   let inputValue = document.getElementById("input").value;
 
@@ -10,7 +12,7 @@ export function addTask() {
       <p class='nameTask'>
       ${inputValue} 
       </p> 
-      <button class='eliminar' type='button'>Eliminar</button>
+      <button class='close' type='button'>Eliminar</button>
       </li>`;
     document.getElementById("list").innerHTML += task;
     var li = document.getElementsByTagName("li");
@@ -32,4 +34,6 @@ export function addTask() {
     }
     input.value = "";
   }
+
+  deleteTask();
 }
