@@ -29,7 +29,7 @@ let input = document.createElement("input");
     input.setAttribute('autofocus', 'autofocus');
     input.setAttribute('style', `
                                 width: 27%; 
-                                color: #333; 
+                                color: #666666; 
                                 font: 24px "Lato", Arial, sans-serif; 
                                 letter-spacing: 1px;
                                 border: 0;
