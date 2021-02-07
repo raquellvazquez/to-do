@@ -1,0 +1,86 @@
+/*Estilos de titulo principal*/
+
+
+h1 {
+  color: #cd6155;
+  font-size: 3rem;
+  text-align: center;
+}
+
+p {
+  color: #808b96;
+  font-size: 2em;
+  text-align: center;
+}
+
+/*Entradas*/
+#addDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input {
+  width: 27%;
+  color: #666666;
+  font: 24px "Lato", Arial, sans-serif;
+  letter-spacing: 1px;
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #cd6155;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+
+/*Boton agregar*/
+#addTask {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.alert-heading {
+  font-size: 3em;
+  color: Tomato;
+}
+
+/*Estilo de la lista*/
+#list{
+    margin:5px 250px;
+}
+li {
+  font-size: 25px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 700px;
+  height: 50px;
+  border: 1px solid rgb(234, 240, 247);
+  box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 16px;
+}
+
+/*Estilos del parrafo dentro de la lista*/
+li .nameTask {
+  color: black;
+  font-size: 25px;
+  margin: 0;
+}
+
+/*Estilos de las clases de las listas*/
+.taskIncomplete {
+  background-color: rgb(223, 110, 110);
+  transition:all 500ms;
+}
+
+.taskComplete {
+  background-color: rgb(6, 201, 16);
+  transition:all 500ms;
+}
+
+.taskComplete p{
+    text-decoration: line-through;
+}
+
