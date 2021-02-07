@@ -1,3 +1,4 @@
+import { completeTask } from "./completeTask.js";
 import { deleteTask } from "./deleteTask.js";
 
 export function addTask() {
@@ -7,16 +8,16 @@ export function addTask() {
     document.querySelector("#alertModal").classList.add("open");
   } else {
     let task = `
-      <li>
-      <input class='checkbox' type='checkbox'>
+      <li class="listItem taskIncomplete">
       <p class='nameTask'>
       ${inputValue} 
       </p> 
-      <button class='eliminar' type='button'>Eliminar</button>
+      <button class='close' type='button'>Eliminar</button>
       </li>`;
     document.getElementById("list").innerHTML += task;
     input.value = "";
   }
 
+  completeTask();
   deleteTask();
 }

@@ -86,3 +86,43 @@
   color: tomato;
   margin-left: 16px;
 }
+/*Estilo de la lista*/
+#list{
+  margin:5px 250px;
+}
+li {
+font-size: 25px;
+text-transform: capitalize;
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 700px;
+height: 50px;
+border: 1px solid rgb(234, 240, 247);
+box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+margin: 16px;
+}
+
+/*Estilos del parrafo dentro de la lista*/
+li .nameTask {
+color: black;
+font-size: 25px;
+margin: 0;
+}
+
+/*Estilos de las clases de las listas*/
+.taskIncomplete {
+background-color: rgb(223, 110, 110);
+transition:all 500ms;
+}
+
+.taskComplete {
+background-color: rgb(6, 201, 16);
+transition:all 500ms;
+}
+
+.taskComplete p{
+  text-decoration: line-through;
+}
+
