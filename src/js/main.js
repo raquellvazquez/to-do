@@ -1,5 +1,5 @@
 import { addTask } from "./addTask.js";
-import { eliminar } from "./deleteTask.js";
+
 import { header, dateHeader } from "./header.js";
 
 /**
