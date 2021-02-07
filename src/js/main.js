@@ -1,6 +1,5 @@
 import { addTask } from "./addTask.js";
-import { completeTask } from "./completeTask.js";
-import { eliminar } from "./deleteTask.js";
+
 import { header, dateHeader } from "./header.js";
 /**
  * Section Header
@@ -15,6 +14,7 @@ dateHeader;
 let addSectionContainer = document.createElement("div");
 addSectionContainer.setAttribute("id", "addDiv");
 document.getElementById("app").appendChild(addSectionContainer);
+
 /**
  * Variable to save a input element
  */
@@ -35,17 +35,33 @@ document.getElementById("addDiv").appendChild(input);
 let button = document.createElement("button");
 button.setAttribute("id", "addTask");
 button.type = "button";
-button.innerHTML = "<span class='alert-heading'><i class='fa fa-plus' aria-hidden='true'></i></span>";
+button.innerHTML = "<span class='btn-icon'><i class='fa fa-plus' aria-hidden='true'></i></span>";
 
 document.getElementById("addDiv").appendChild(button);
 
 document.querySelector("#addTask").addEventListener("click", addTask);
 
+let toDoList = document.createElement("div");
+    toDoList.setAttribute("id", "toDoList");
+
+    document.getElementById("app").appendChild(toDoList);
+
+let list = document.createElement("ul");
+    list.setAttribute("id", "list");
+    document.getElementById("toDoList").appendChild(list);
+
+//modal
+let alertModal = document.createElement("div");
+    alertModal.setAttribute("id", "alertModal");
+
+    document.getElementById("app").appendChild(alertModal);
 
 let div = document.createElement("div");
 div.setAttribute("id", "toDoList");
 
-document.getElementById("app").appendChild(div);
+let buttonAlert = document.createElement("button");
+buttonAlert.setAttribute("id", "buttonAlert");
+buttonAlert.innerHTML = "Ok";
 
 let ul = document.createElement("ul");
 ul.setAttribute("id", "list");

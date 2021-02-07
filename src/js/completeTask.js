@@ -1,4 +1,6 @@
-//Funcion completeTask
+/*
+* Funcion completeTask
+*/
 
 export function completeTask(){
     document.querySelectorAll('.listItem').forEach(item => {
