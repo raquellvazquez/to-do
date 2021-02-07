@@ -33,9 +33,9 @@ dateElement.innerHTML =
   days[date.getDay()] +
   ", " +
   date.getDate() +
-  " of " +
+  " " +
   monthArray[date.getMonth()] +
-  " of " +
+  " " +
   date.getFullYear();
 dateElement.setAttribute("class", "date");
 
