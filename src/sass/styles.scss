@@ -1,0 +1,228 @@
+@import './variables';
+/*
+* Modal css styles
+*/
+#alertModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+
+  opacity: 0;
+  z-index: -1;
+}
+
+#alertModal.open {
+  opacity: 1;
+  z-index: 999;
+}
+
+#alertModal > div {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  width: auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  color: $primary-color;
+
+  transform: translateY(-200px) scale(0);
+  transition: all 0.5s ease;
+
+  @media only screen and (min-width: 768px) {
+      width: 50%;
+  }
+}
+
+#alertModal.open > div {
+  transform: translateY(0) scale(1);
+}
+/*
+* Header css styles
+*/
+.title{
+  color: $primary-color ;
+  text-align: center;
+  font-size: 3em;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 5em;
+  }
+}
+/*
+* Date css styles
+*/
+.date {
+  text-align: center;
+  font-size: 2em;
+  color: $secondary-color;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 3em;
+  }
+}
+/*
+* Add new task css styles
+*/
+#addDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 20px;
+
+  @media only screen and (min-width: 768px) {
+    margin: 69px 20px;
+  }
+}
+
+#input {
+  width: 90%; 
+  color: #666666; 
+  font: 24px $font-family;
+  letter-spacing: 1px;
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid $primary-color;
+  text-transform: capitalize;
+  transition: 0.4s;
+
+  @media only screen and (min-width: 768px) {
+    width: 40%;
+    font: 2em $font-family;
+  }
+}
+
+#addTask {
+  border-style: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.btn-icon {
+  font-size: 3em;
+  color: tomato;
+  margin-left: 16px;
+}
+/*Estilo de la lista*/
+#list{
+  margin: 0;
+  padding: 0;
+}
+li {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 16px;
+
+   @media only screen and (min-width: 768px) {
+      font-size: 2em;
+    }
+}
+
+/*Estilos del parrafo dentro de la lista*/
+li .nameTask {
+  font-family: $secondary-fontFamily;
+  color: $secondary-color;
+  margin: 0;
+}
+
+/*Estilos de las clases de las listas*/
+.taskIncomplete {
+  background-color: rgb(255, 255, 255);
+  transition:all 500ms;
+}
+
+.taskComplete {
+  background-color: rgb(230, 247, 231);
+  transition:all 500ms;
+}
+
+.taskComplete p{
+  font-family: $font-family;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+/*To do container*/
+#toDoList {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-top: 30px;
+
+ #divList {
+  width: 90%;
+  align-self: center;
+  margin: 16px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px 0px rgba(42, 55, 71, 0.15);
+  
+    .subtitle {
+      color: $secondary-color;
+      font-family: $font-family;
+      margin: 0;
+      padding: 16px;
+      font-size: 1em;
+      border-bottom: 1px solid rgb(224, 224, 224);
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+
+      .subtitle {
+        font-size: 2em;
+      }
+    }
+ }
+}
+
+.close {
+  border-style: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 35px;
+  color: tomato;
+}
+
+#buttonAlert {
+  width: 50%;
+  height: 56px;
+  background: #fff;
+  border: 1px solid $primary-color;
+  box-shadow: 0px 4px 8px 0px rgba(42, 55, 71, 0.15);
+  border-radius: 6px;
+  font-family: $font-family;
+  font-size: 1em;
+  color: $primary-color;
+  font-weight: 600;
+}
+
+.noTask {
+  display: block;
+  font-family: $secondary-fontFamily;
+  color: $secondary-color;
+  margin: 0;
+  text-align: center;
+  padding: 16px;
+  font-size: 1em;
+  
+  @media only screen and (min-width: 768px) {
+     font-size: 2em;
+  }
+}
+
+.no-task-none{
+    display: none;
+}
