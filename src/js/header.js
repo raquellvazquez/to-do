@@ -1,9 +1,18 @@
+/**
+ * Variable to save a h1 element
+ */
 let h1 = document.createElement("h1");
 h1.innerHTML = "To do list";
 h1.setAttribute("class", "title");
 
+/**
+ * Variable to save a p element
+ */
 let dateElement = document.createElement("p");
 
+/**
+ * Variable to save a array with months
+ */
 let monthArray = new Array(
   "January",
   "February",
@@ -18,6 +27,10 @@ let monthArray = new Array(
   "November",
   "December"
 );
+
+/**
+ * Variable to save a array with the days of the week
+ */
 var days = new Array(
   "Sunday",
   "Monday",
@@ -27,6 +40,10 @@ var days = new Array(
   "Friday",
   "Saturday"
 );
+
+/**
+ * Variable to save a Date object
+ */
 var date = new Date();
 
 dateElement.innerHTML =

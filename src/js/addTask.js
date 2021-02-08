@@ -1,6 +1,12 @@
 import { completeTask } from "./completeTask.js";
 import { deleteTask } from "./deleteTask.js";
 
+/**
+ * Function
+ * @return void
+ * get the input value, validate that it is not empty
+ * and if not, add a list element with the input value
+ */
 export function addTask() {
   let inputValue = document.getElementById("input").value;
 
@@ -16,7 +22,7 @@ export function addTask() {
       </li>`;
     document.getElementById("list").innerHTML += task;
     input.value = "";
-    document.getElementById("noTask").className='no-task-none';
+    document.getElementById("noTask").className = "no-task-none";
   }
 
   completeTask();
