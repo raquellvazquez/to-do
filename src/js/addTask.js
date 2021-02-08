@@ -12,10 +12,11 @@ export function addTask() {
       <p class='nameTask'>
       ${inputValue} 
       </p> 
-      <button class='close' type='button'>Eliminar</button>
+      <button class='close' type='button'><i class="fa fa-trash"</button>
       </li>`;
     document.getElementById("list").innerHTML += task;
     input.value = "";
+    document.getElementById("noTask").className='no-task-none';
   }
 
   completeTask();

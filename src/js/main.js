@@ -22,7 +22,7 @@ input.setAttribute("type", "text");
 input.setAttribute("placeholder", "New task...");
 input.setAttribute('autofocus', 'autofocus');
 input.addEventListener("focus", function () {
-    this.style.outline = "none";
+  this.style.outline = "none";
 });
 
 document.getElementById("addDiv").appendChild(input);
@@ -38,15 +38,6 @@ button.innerHTML = "<span class='btn-icon'><i class='fa fa-plus' aria-hidden='tr
 document.getElementById("addDiv").appendChild(button);
 
 document.querySelector("#addTask").addEventListener("click", addTask);
-
-let toDoList = document.createElement("div");
-toDoList.setAttribute("id", "toDoList");
-
-document.getElementById("app").appendChild(toDoList);
-
-let list = document.createElement("ul");
-list.setAttribute("id", "list");
-document.getElementById("toDoList").appendChild(list);
 
 //modal
 let alertModal = document.createElement("div");
@@ -75,6 +66,37 @@ document.querySelector("#buttonAlert").addEventListener("click", () => {
   document.querySelector("#alertModal").classList.remove("open");
 });
 
+
+let toDoList = document.createElement("div");
+toDoList.setAttribute("id", "toDoList");
+
+document.getElementById("app").appendChild(toDoList);
+
+
+let divList = document.createElement("div");
+divList.setAttribute("id", "divList");
+
+document.getElementById("toDoList").appendChild(divList);
+
+
+let toDoListH3 = document.createElement("h2");
+toDoListH3.innerHTML = "<span class=''><i class='fa fa-angle-down' aria-hidden='true'></i></span> Click to mark a task as complete"
+toDoListH3.setAttribute("class", "subtitle");
+
+document.getElementById("divList").appendChild(toDoListH3);
+
+
 let ul = document.createElement("ul");
 ul.setAttribute("id", "list");
-document.getElementById("app").appendChild(ul);
+document.getElementById("divList").appendChild(ul);
+
+let list = document.createElement("ul");
+list.setAttribute("id", "list");
+document.getElementById("divList").appendChild(list);
+
+let noTask = document.createElement("p");
+noTask.setAttribute("id", "noTask");
+noTask.setAttribute("class", "noTask");
+noTask.innerText = "No Task.";
+document.getElementById("divList").appendChild(noTask);
+
