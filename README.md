@@ -2,11 +2,11 @@
 
 ## What is To Do List?
 
-[To do List](https://) is a project that allows you to add tasks to do, allowing you to select them when you finish said task or delete it if you want.
+[To do List](https://raquellvazquez.github.io/to-do/) is a project that allows you to add tasks to do, allowing you to select them when you finish said task or delete it if you want.
 
-To do list shows you the current date so you can have a better planning of your pending tasks day by day.
+[To do List](https://raquellvazquez.github.io/to-do/) shows you the current date so you can have a better planning of your pending tasks day by day.
 
-In addition, To do list adapts to mobile and desktop devices so you can manage your tasks from any device you want.
+In addition, [To do List](https://raquellvazquez.github.io/to-do/) adapts to mobile and desktop devices so you can manage your tasks from any device you want.
 
 
 <div align="center">
@@ -81,7 +81,7 @@ To delete a finished or to-do task, you only need to press the trash can icon an
 
 ## Features
 
-[To do List](https://) was developed using different technologies such as:
+[To do List](https://raquellvazquez.github.io/to-do/) was developed using different technologies such as:
 
 - :bulb: **JavaScript**: A  programming language that conforms to the ECMAScript specification.
 
