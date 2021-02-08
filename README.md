@@ -8,8 +8,11 @@ To do list shows you the current date so you can have a better planning of your 
 
 In addition, To do list adapts to mobile and desktop devices so you can manage your tasks from any device you want.
 
+
 <div align="center">
-    <img src="https://raw.githubusercontent.com/" alt="add new task" width="80%" height="50%" />
+    <br>
+    <img src="https://raw.githubusercontent.com/raquellvazquez/to-do/develop/src/assets/toDoList.png" alt="add new task" width="auto" height="400px" />
+    <br>
 </div>
 
 ## How does it work?
@@ -19,12 +22,20 @@ Add new task.
 ```
 To add a new task, enter the name of the task in the "New task ..." input and click on the "+" icon.
 ```
-<img src="https://raw.githubusercontent.com/" alt="add new task" width="50%" height="50%" />
+<div align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/raquellvazquez/to-do/develop/src/assets/addTask.png" alt="add new task" width="50%" height="50%" />
+    <p></p>
+</div>
 
 ```
 In case you do not add a task and click on the add icon, a modal will appear with the legend "Please add new task", you only need to click on the "Ok" button for it to close.
 ```
-<img src="https://raw.githubusercontent.com/" alt="modal" width="50%" height="50%" />
+<div align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/raquellvazquez/to-do/develop/src/assets/modal.png" alt="add new task" width="50%" height="50%" />
+    <p></p>
+</div>
 
 List of Tasks
 
@@ -34,7 +45,12 @@ In this part the tasks are presented once you click on the "+" icon, showing you
 When you do not have tasks to do, the message "No task" will appear in the list and it will disappear as soon as you add your new task.
 ```
 
-<img src="https://raw.githubusercontent.com/" alt="list task" width="50%" height="50%" />
+<div align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/raquellvazquez/to-do/develop/src/assets/listTask.png" alt="list task" width="50%" height="50%" />
+    <p></p>
+</div>
+
 
 Select a task as finished.
 
@@ -44,7 +60,11 @@ Once you finish a task and want to mark it as finished, you only need to click o
 If by mistake you marked it as finished, you can click again on the name of the task and it will return to its initial state.
 ```
 
-<img src="https://raw.githubusercontent.com/" alt="select task" width="50%" height="50%" />
+<div align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/raquellvazquez/to-do/develop/src/assets/selectTask.png" alt="list task" width="50%" height="50%" />
+    <p></p>
+</div>
 
 Delete a task
 
@@ -52,7 +72,11 @@ Delete a task
 To delete a finished or to-do task, you only need to press the trash can icon and it will be removed from the task list.
 ```
 
-<img src="https://raw.githubusercontent.com/" alt="delet task" width="50%" height="50%" />
+<div align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/raquellvazquez/to-do/develop/src/assets/deletetask.png" alt="list task" width="50%" height="50%" />
+    <p>"Go to the dentist was eliminated"</p>
+</div>
 
 
 ## Features
@@ -73,7 +97,7 @@ To delete a finished or to-do task, you only need to press the trash can icon an
 ## Developers
 
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Kevin Henry López Vázquez| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Marcos Eduardo Miranda Bravo| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Jesrig Soid Pineda Salinas| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Laura Raquel Vazquez Sanchez ||
+| [<img src="https://raw.githubusercontent.com/raquellvazquez/to-do/develop/src/assets/boy.png" alt="IE / Edge" width="24px" height="24px" />](https://github.com/Kyervnienh)</br>Kevin Henry López Vázquez| [<img src="https://raw.githubusercontent.com/raquellvazquez/to-do/develop/src/assets/boy.png" alt="Firefox" width="24px" height="24px" />](https://github.com/Markuz25)</br>Marcos Eduardo Miranda Bravo| [<img src="https://raw.githubusercontent.com/raquellvazquez/to-do/develop/src/assets/boy.png" alt="Chrome" width="24px" height="24px" />](https://github.com/JesrigPineda)</br>Jesrig Soid Pineda Salinas| [<img src="https://raw.githubusercontent.com/raquellvazquez/to-do/develop/src/assets/girl.png" alt="Safari" width="24px" height="24px" />](https://github.com/raquellvazquez)</br>Laura Raquel Vazquez Sanchez ||
 | --- | --- | --- | --- | --- |
 | kevin.kyervnienh@gmail.com | markuzemb18@gmail.com | Js.pineda.sa@gmail.com| raquelskrats@gmail.com |
 
