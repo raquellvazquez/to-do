@@ -2,7 +2,7 @@
  * Variable to save a h1 element
  */
 let h1 = document.createElement("h1");
-h1.innerHTML = "To do list";
+h1.innerText = "To do list";
 h1.setAttribute("class", "title");
 
 /**
