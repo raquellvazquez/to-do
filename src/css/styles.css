@@ -142,6 +142,7 @@ li .nameTask {
   font-family: "Raleway", sans-serif;
   color: #808B96;
   margin: 0;
+  word-break: break-all;
 }
 
 /*Estilos de las clases de las listas*/
